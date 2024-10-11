@@ -1,9 +1,12 @@
-<html>
-  <head>
-    <title>About me</title>
-  </head>
+{% extends "movies/base.html" %}
 
-  <body>
-    <h1>About me Page</h1>
-  </body>
-</html>
+{% block title %}
+  About Me
+{% endblock %}
+
+{% block content %}
+<ul>
+  <li><h1>I am Alok Shandilya</h1></li>
+  <li><a href="https://github.com/alokshandilya">GitHub Profile</a></li>
+</ul>
+{% endblock %}

@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>{% block title %}{% endblock %} | MovieHub</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About me</a></li>
+      </ul>
+    </nav>
+
+    {% block content %}
+      <h1>page not found</h1>
+    {% endblock content %}
+</html>
