@@ -1,12 +1,18 @@
 {% extends "movies/base.html" %}
 
-{% block title %}
-  About Me
-{% endblock %}
+{% block title %} About Me {% endblock %}
 
-{% block content %}
-<ul>
-  <li><h1>I am Alok Shandilya</h1></li>
-  <li><a href="https://github.com/alokshandilya">GitHub Profile</a></li>
-</ul>
+{%block content %}
+  <h1>I am Alok Shandilya</h1>
+
+{% load static %}
+  <img
+    src="{% static 'movies/avatar.jpg' %}"
+    alt="Alok Shandilya"
+    style="width: 300px"
+  />
+  <br/>
+  <br/>
+  <a href="https://github.com/alokshandilya">GitHub Profile</a>
+
 {% endblock %}
